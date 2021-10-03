@@ -1,0 +1,25 @@
+:root {
+    --colNum: 0;
+    --rowNum: 0;
+}
+
+#container {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(var(--colNum), 1fr);
+    grid-template-rows: repeat(var(--rowNum), 1fr);
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.cell{
+    border: 1px solid;
+    background-color: rgb(126, 219, 215);
+}
+
+.clicked {
+    background-color: aqua;
+}
